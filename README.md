@@ -7,6 +7,8 @@ Turtle module of the Python Standard Library is mainly used to make this project
 Object Oriented Programming has been used extensively.
 This project facilitates two players to play the game against each other.
 
+![demo](https://user-images.githubusercontent.com/104984582/202675445-47288238-4692-4fd9-af28-6a8958fda863.JPG)
+
 The Steps involved in creating this project are :
 
 1. Setting up the Screen :
@@ -31,3 +33,15 @@ The Steps involved in creating this project are :
    turtle instance and the paddle turtle instance is less than 50 pxthen the y coordinate of the ball movement
    is multiplied by -1, so that it turns negative and hence the ball bounces back.
    The coordinates can be changed according to the Screen Size.
+   
+6. Detecting when the Paddles miss the Ball :
+   When the x coordinates of the ball is greater than 380 or is less than -380, then the ball is considered missing one
+   of the paddles and the game restarts with the ball at the center going to the opposite player who missed the ball.
+   
+7. Keeping the Score :
+   The Score Element is also a Turtle class instance. The Score of a player is increased by 1 when the opposite player
+   misses the ball. After that the score is updated.
+   
+8. Finishing the Game :
+   The game continues running until we press the SpaceBar button. After that the game stops and "Game Over!!" comes
+   written on the Screen.
