@@ -40,7 +40,6 @@ s.onkey(r_paddle.down, "Down")
 def game_over():
     global game_is_on
     game_is_on = False
-    ball.clear()
     over = Turtle()
     over.color("white")
     over.write(arg="Game Over", align=ALIGNMENT, font=FONT)
